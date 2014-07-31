@@ -32,6 +32,7 @@
 \definecolor{uulm-med}{RGB}{38,84,124}
 \definecolor{uulm-mawi}{RGB}{86,170,28}
 \definecolor{uulm-nawi}{RGB}{189,96,5}
+\definecolor{paasage}{RGB}{0,102,128}
 
 \definecolor{uulm-myfak}{named}{uulm-in}
 \DeclareOption{uulm-in}{\definecolor{uulm-myfak}{named}{uulm-in}}
@@ -39,18 +40,29 @@
 \DeclareOption{uulm-mawi}{\definecolor{uulm-myfak}{named}{uulm-mawi}}
 \DeclareOption{uulm-nawi}{\definecolor{uulm-myfak}{named}{uulm-nawi}}
 \DeclareOption{uulm-central}{\definecolor{uulm-myfak}{named}{uulm}}
+\DeclareOption{paasage}{\definecolor{uulm-myfak}{named}{paasage}}
+
+% Colors for paasage logo
+\definecolor{c4d4d4d}{RGB}{77,77,77}
+\definecolor{cde8787}{RGB}{222,135,135}
+\definecolor{cffd42a}{RGB}{255,212,42}
+\definecolor{cf9f9f9}{RGB}{249,249,249}
+\definecolor{c37abc8}{RGB}{55,171,200}
+\definecolor{c006680}{RGB}{0,102,128}
 
 \newboolean{alternate}\setboolean{alternate}{false}
 \newboolean{metafont}\setboolean{metafont}{false}
 \newboolean{metaprofont}\setboolean{metaprofont}{false}
 \newboolean{pdflogo}\setboolean{pdflogo}{false}
 \newboolean{vslogo}\setboolean{vslogo}{false}
+\newboolean{paasagelogo}\setboolean{vslogo}{false}
 \newboolean{xetexwhelvetica}\setboolean{xetexwhelvetica}{true}
 \DeclareOption{alternate}{\setboolean{alternate}{true}}
 \DeclareOption{metafont}{\setboolean{metafont}{true}}
 \DeclareOption{metaprofont}{\setboolean{metaprofont}{true}}
 \DeclareOption{pdflogo}{\setboolean{pdflogo}{true}}
 \DeclareOption{vslogo}{\setboolean{vslogo}{true}}
+\DeclareOption{paasagelogo}{\setboolean{paasagelogo}{true}}
 \ProcessOptions*
 
 % Command for multiple choice answer
@@ -74,9 +86,9 @@
 \colorlet{uulm-block0}{uulm-akzent!20}
 
 \setbeamercolor{structure}{fg=uulm-myfak}
+\setbeamercolor{paasage_structure}{fg=c37abc8}
 \setbeamercolor{headbox}{bg=uulm-myfak,fg=white}
 \setbeamercolor{alerted text}{fg=uulm-myfak}
-
 \setbeamercolor{lighthead}{fg=uulm-myfak!80!black,bg=white}
 
 \setbeamercolor{palette primary}{use=structure,fg=structure.fg}
@@ -171,6 +183,13 @@ SmallCapsFont={Arial}
 	\begin{beamercolorbox}[wd=.5\paperwidth,leftskip=0pt]{structure}
 	\vspace*{2.1em}
 	\par\hspace*{2em}\vslogo
+	\end{beamercolorbox}%
+	\vspace*{-5.1em}
+	}{}%
+	\ifthenelse{\boolean{paasagelogo}}{%
+	\begin{beamercolorbox}[wd=.5\paperwidth,leftskip=0pt]{paasage_structure}
+	\vspace*{2.1em}
+	\par\hspace*{2em}\paasagelogo
 	\end{beamercolorbox}%
 	\vspace*{-5.1em}
 	}{}%
@@ -1920,6 +1939,140 @@ SmallCapsFont={Arial}
       \end{scope}
 \end{scope}
 \end{tikzpicture}%
+}
+
+\newcommand\paasagelogo{%
+\begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
+  \pgftransformscale{0.11}
+\begin{scope}[shift={(-567.66237,-327.83046)}]% layer1
+  \begin{scope}[cm={{4.55713,-1.63604,-2.27717,3.51323,(-219.27445,-1457.8584)}},draw=c4d4d4d,fill=cde8787,line width=2.348pt]% text3087-4
+  \end{scope}
+  \begin{scope}[cm={{0.64982,0.0,0.0,0.64982,(83.16442,-142.32316)}}]% g5196
+    % path4884-6
+    \path[shift={(-192.4002,1093.419)},fill=cffd42a] (1462.8572,-294.4770) ..
+      controls (1462.8572,-266.8627) and (1440.4714,-244.4770) ..
+      (1412.8572,-244.4770) .. controls (1385.2429,-244.4770) and
+      (1362.8572,-266.8627) .. (1362.8572,-294.4770) .. controls
+      (1362.8572,-322.0912) and (1385.2429,-344.4770) .. (1412.8572,-344.4770) ..
+      controls (1440.4714,-344.4770) and (1462.8572,-322.0912) ..
+      (1462.8572,-294.4770) -- cycle;
+
+    % path4241-2-1-8-6-1
+    \path[fill=cf9f9f9] (1025.9079,739.4899) .. controls (985.6167,739.4899) and
+      (950.1959,760.1525) .. (929.5328,791.4274) .. controls (929.5228,791.4384) and
+      (929.5118,791.4474) .. (929.5018,791.4584) .. controls (928.9480,792.0490) and
+      (928.5064,792.7242) .. (928.2518,793.4272) .. controls (927.9169,793.9574) and
+      (927.5784,794.4849) .. (927.2518,795.0210) .. controls (923.1985,794.4183) and
+      (919.0665,794.0834) .. (914.8456,794.0834) .. controls (883.7035,794.0834) and
+      (856.5507,811.0947) .. (842.0956,836.3022) .. controls (826.8031,832.7710) and
+      (810.1964,834.7739) .. (795.5331,843.2397) .. controls (773.9577,855.6963) and
+      (762.3739,878.7708) .. (763.5018,902.0522) .. controls (762.2407,906.7101) and
+      (761.5643,911.6516) .. (761.5643,916.7710) .. controls (761.5643,945.1710) and
+      (782.4086,968.0522) .. (808.2831,968.0522) -- (1373.5019,968.0522) .. controls
+      (1399.3764,968.0522) and (1420.1894,945.1710) .. (1420.1894,916.7710) ..
+      controls (1420.1894,914.4760) and (1420.0470,912.2340) .. (1419.7831,910.0210)
+      .. controls (1422.0549,893.1690) and (1417.7116,875.4751) ..
+      (1406.2207,861.1772) .. controls (1393.4547,845.2932) and (1374.6898,837.1161)
+      .. (1355.7831,837.2084) .. controls (1354.7029,837.2184) and
+      (1353.6127,837.2444) .. (1352.5331,837.3024) .. controls (1352.5231,837.3024)
+      and (1352.5111,837.3024) .. (1352.5021,837.3024) .. controls
+      (1348.4481,835.7952) and (1344.5545,833.9872) .. (1341.1271,831.2712) ..
+      controls (1326.3764,807.2766) and (1299.8891,791.2712) .. (1269.6583,791.2712)
+      .. controls (1248.3006,791.2712) and (1228.8255,799.2745) ..
+      (1214.0333,812.4274) .. controls (1211.7648,810.4939) and (1209.3939,808.6829)
+      .. (1206.9083,806.9899) .. controls (1196.9739,793.7618) and
+      (1181.1638,785.2086) .. (1163.3458,785.2086) .. controls (1149.8214,785.2086)
+      and (1137.4530,790.1363) .. (1127.9396,798.3024) .. controls
+      (1127.3738,796.8177) and (1125.8779,795.4196) .. (1124.0646,794.1149) ..
+      controls (1103.6789,761.3346) and (1067.3482,739.4899) .. (1025.9083,739.4899)
+      -- cycle(845.1266,835.3962) .. controls (845.1166,835.9879) and
+      (845.1696,836.5694) .. (845.3141,837.1462) .. controls (844.7731,836.9914) and
+      (844.2341,836.8179) .. (843.6891,836.6774) .. controls (844.1669,836.2449) and
+      (844.6409,835.8199) .. (845.1266,835.3962) -- cycle(1396.9391,868.1774) ..
+      controls (1397.0131,868.2694) and (1397.0839,868.3666) .. (1397.1578,868.4586)
+      .. controls (1397.2088,868.5226) and (1397.2630,868.5822) ..
+      (1397.3141,868.6462) .. controls (1397.1787,868.5562) and (1397.0455,868.4526)
+      .. (1396.9078,868.3649) .. controls (1396.9218,868.3039) and
+      (1396.9268,868.2400) .. (1396.9388,868.1774) -- cycle(766.7828,892.8962) ..
+      controls (766.8058,892.9682) and (766.8218,893.0428) .. (766.8448,893.1149) ..
+      controls (766.4504,893.9482) and (766.0732,894.7865) .. (765.7198,895.6462) ..
+      controls (766.0576,894.7260) and (766.4113,893.8041) .. (766.7823,892.8962) --
+      cycle;
+
+    % path4016-5-3-3-0-8
+    \path[fill=c37abc8] (1068.5523,955.7686) .. controls (1072.1926,939.8855) and
+      (1070.4604,923.2912) .. (1072.2026,907.0897) .. controls (1075.6558,874.9760)
+      and (1093.5285,844.6884) .. (1119.9707,826.1405) .. controls
+      (1146.4128,807.5927) and (1180.9759,801.0991) .. (1212.3468,808.7854) ..
+      controls (1193.0390,806.2636) and (1172.8725,810.9656) .. (1156.6711,821.7668)
+      .. controls (1140.4698,832.5681) and (1128.3735,849.3751) ..
+      (1123.2758,868.1678) .. controls (1116.8762,891.7598) and (1121.3358,917.0686)
+      .. (1116.5171,941.0335) .. controls (1111.1871,967.5414) and
+      (1094.0082,991.4352) .. (1070.5778,1004.9295) .. controls
+      (1047.1474,1018.4238) and (1017.8592,1021.2919) .. (992.2561,1012.5992) ..
+      controls (1009.4706,1013.7210) and (1027.0270,1008.5285) ..
+      (1040.8618,998.2234) .. controls (1054.6966,987.9183) and (1064.6984,972.5836)
+      .. (1068.5523,955.7686);
+
+    % text4316-7-9
+    \path[fill=c37abc8] (813.35736,947.75885) node[above right] (text4316-7-9) {P};
+
+    % text4320-7-4
+    \path[fill=c37abc8] (896.68268,947.75885) node[above right] (text4320-7-4) {AA};
+
+    % text4324-7-4
+    \path[fill=c37abc8] (1139.8973,946.24896) node[above right] (text4324-7-4)
+      {AGE};
+
+    \begin{scope}[shift={(747.5074,403.44989)}]% g4676-3-9
+      % path4241-5-8
+      \path[fill=c006680] (167.0745,384.3109) .. controls (134.3696,384.3109) and
+        (106.0829,403.0589) .. (92.2620,430.3734) .. controls (111.4425,411.2796) and
+        (137.8721,399.4672) .. (167.0745,399.4672) .. controls (196.3001,399.4672) and
+        (222.7653,411.2840) .. (241.9495,430.4047) .. controls (228.1364,403.0672) and
+        (199.7963,384.3109) .. (167.0745,384.3109) -- cycle;
+
+      % path4241-8-99-8
+      \path[fill=c006680] (278.1571,329.7087) .. controls (233.0927,329.7087) and
+        (194.1162,355.5418) .. (175.0721,393.1787) .. controls (201.5012,366.8691) and
+        (237.9188,350.5927) .. (278.1571,350.5927) .. controls (318.4274,350.5927) and
+        (354.8941,366.8752) .. (381.3282,393.2218) .. controls (362.2950,355.5531) and
+        (323.2448,329.7087) .. (278.1571,329.7087) -- cycle;
+
+      % path4241-7-8-0
+      \path[fill=c006680] (415.5812,375.4123) .. controls (394.3440,375.4123) and
+        (375.9759,387.5865) .. (367.0011,405.3233) .. controls (379.4561,392.9246) and
+        (396.6184,385.2541) .. (415.5812,385.2541) .. controls (434.5590,385.2541) and
+        (451.7444,392.9275) .. (464.2018,405.3436) .. controls (455.2321,387.5918) and
+        (436.8293,375.4123) .. (415.5812,375.4123) -- cycle;
+
+      % path4241-4-1-8
+      \path[fill=c006680] (521.9017,381.4732) .. controls (489.1968,381.4732) and
+        (460.9101,400.2212) .. (447.0892,427.5357) .. controls (466.2697,408.4419) and
+        (492.6992,396.6295) .. (521.9017,396.6295) .. controls (551.1273,396.6295) and
+        (577.5925,408.4463) .. (596.7767,427.5670) .. controls (582.9636,400.2295) and
+        (554.6235,381.4732) .. (521.9017,381.4732) -- cycle;
+
+      % path4241-1-8-7
+      \path[fill=c006680] (47.7672,433.4692) .. controls (26.0578,446.0032) and
+        (14.4662,469.2887) .. (15.7600,492.7167) .. controls (21.1744,472.6915) and
+        (34.1912,454.7215) .. (53.5757,443.5299) .. controls (72.9756,432.3294) and
+        (95.0718,430.0308) .. (115.1340,435.3708) .. controls (95.4880,422.5180) and
+        (69.4878,420.9288) .. (47.7672,433.4692) -- cycle;
+
+      % path4241-6-2-7
+      \path[fill=c006680] (658.4557,451.3999) .. controls (642.7439,431.8503) and
+        (617.9479,423.9484) .. (594.9807,428.8090) .. controls (615.6087,431.1014) and
+        (635.3668,441.2251) .. (649.3959,458.6811) .. controls (663.4362,476.1510) and
+        (669.0867,497.6478) .. (666.8735,518.3011) .. controls (676.5788,496.9109) and
+        (674.1756,470.9597) .. (658.4557,451.3999) -- cycle;
+
+    \end{scope}
+  \end{scope}
+  \begin{scope}[cm={{4.55713,-1.63604,-2.27717,3.51323,(1449.5252,-922.72983)}},draw=c4d4d4d,fill=cde8787,line width=2.348pt]% text3087-4-3
+  \end{scope}
+\end{scope}
+\end{tikzpicture}
 }
 
 \newcommand\milogo{%

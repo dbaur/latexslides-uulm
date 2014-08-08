@@ -50,12 +50,17 @@
 \definecolor{c37abc8}{RGB}{55,171,200}
 \definecolor{c006680}{RGB}{0,102,128}
 
+% Colors for eu logo
+\definecolor{c254aa5}{RGB}{37,74,165}
+\definecolor{cfff200}{RGB}{255,242,0}
+
 \newboolean{alternate}\setboolean{alternate}{false}
 \newboolean{metafont}\setboolean{metafont}{false}
 \newboolean{metaprofont}\setboolean{metaprofont}{false}
 \newboolean{pdflogo}\setboolean{pdflogo}{false}
 \newboolean{vslogo}\setboolean{vslogo}{false}
-\newboolean{paasagelogo}\setboolean{vslogo}{false}
+\newboolean{paasagelogo}\setboolean{paasagelogo}{false}
+\newboolean{eulogo}\setboolean{eulogo}{false}
 \newboolean{xetexwhelvetica}\setboolean{xetexwhelvetica}{true}
 \DeclareOption{alternate}{\setboolean{alternate}{true}}
 \DeclareOption{metafont}{\setboolean{metafont}{true}}
@@ -63,6 +68,7 @@
 \DeclareOption{pdflogo}{\setboolean{pdflogo}{true}}
 \DeclareOption{vslogo}{\setboolean{vslogo}{true}}
 \DeclareOption{paasagelogo}{\setboolean{paasagelogo}{true}}
+\DeclareOption{eulogo}{\setboolean{eulogo}{true}}
 \ProcessOptions*
 
 % Command for multiple choice answer
@@ -190,6 +196,13 @@ SmallCapsFont={Arial}
 	\begin{beamercolorbox}[wd=.5\paperwidth,leftskip=0pt]{paasage_structure}
 	\vspace*{2.1em}
 	\par\hspace*{2em}\paasagelogo
+	\end{beamercolorbox}%
+	\vspace*{-5.1em}
+	}{}%
+	\ifthenelse{\boolean{eulogo}}{%
+	\begin{beamercolorbox}[wd=.5\paperwidth,leftskip=0pt]{paasage_structure}
+	\vspace*{2.1em}
+	\par\hspace*{2em}\eulogo
 	\end{beamercolorbox}%
 	\vspace*{-5.1em}
 	}{}%
@@ -2072,6 +2085,91 @@ SmallCapsFont={Arial}
   \begin{scope}[cm={{4.55713,-1.63604,-2.27717,3.51323,(1449.5252,-922.72983)}},draw=c4d4d4d,fill=cde8787,line width=2.348pt]% text3087-4-3
   \end{scope}
 \end{scope}
+\end{tikzpicture}
+}
+
+\newcommand\eulogo{
+\begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
+  \pgftransformscale{0.09}
+\begin{scope}[shift={(-122.74937,-342.58486)}]% layer1
+  % path3018
+  \path[fill=c254aa5,nonzero rule] (122.7494,578.9224) -- (477.2506,578.9224) --
+    (477.2506,342.5849) -- (122.7494,342.5849) -- (122.7494,578.9224) -- cycle;
+
+  % path3020
+  \path[fill=cfff200,nonzero rule] (292.4456,394.0786) -- (299.9256,388.6199) --
+    (307.4069,394.0786) -- (304.5606,385.2499) -- (312.1581,379.7911) --
+    (302.7919,379.7911) -- (299.9256,370.8561) -- (297.0606,379.8011) --
+    (287.7006,379.7911) -- (295.2919,385.2499) -- (292.4456,394.0786);
+
+  % path3022
+  \path[fill=cfff200,nonzero rule] (253.7344,404.4786) -- (261.2156,399.0199) --
+    (268.6919,404.4786) -- (265.8494,395.6511) -- (273.4419,390.1924) --
+    (264.0769,390.1924) -- (261.2106,381.2461) -- (258.3444,390.2011) --
+    (248.9844,390.1921) -- (256.5769,395.6509) -- (253.7344,404.4784);
+
+  % path3024
+  \path[fill=cfff200,nonzero rule] (232.8906,409.6349) -- (230.0244,418.5899) --
+    (220.6644,418.5799) -- (228.2569,424.0399) -- (225.4106,432.8674) --
+    (232.8906,427.4086) -- (240.3706,432.8674) -- (237.5244,424.0399) --
+    (245.1169,418.5799) -- (235.7569,418.5799) -- (232.8906,409.6349);
+
+  % path3026
+  \path[fill=cfff200,nonzero rule] (222.4994,466.0711) -- (229.9756,471.5299) --
+    (227.1331,462.7011) -- (234.7269,457.2424) -- (225.3656,457.2424) --
+    (222.4994,448.2974) -- (219.6331,457.2624) -- (210.2681,457.2424) --
+    (217.8656,462.7011) -- (215.0194,471.5299) -- (222.4994,466.0711);
+
+  % path3028
+  \path[fill=cfff200,nonzero rule] (235.7569,496.0224) -- (232.8906,487.0761) --
+    (230.0244,496.0311) -- (220.6644,496.0221) -- (228.2569,501.4809) --
+    (225.4106,510.3084) -- (232.8906,504.8396) -- (240.3706,510.3084) --
+    (237.5244,501.4809) -- (245.1169,496.0221) -- (235.7569,496.0221);
+
+  % path3030
+  \path[fill=cfff200,nonzero rule] (264.1356,524.4011) -- (261.2694,515.4649) --
+    (258.4081,524.4111) -- (249.0419,524.4011) -- (256.6356,529.8599) --
+    (253.7944,538.6874) -- (261.2744,533.2286) -- (268.7494,538.6874) --
+    (265.9081,529.8599) -- (273.5006,524.4011) -- (264.1356,524.4011);
+
+  % path3032
+  \path[fill=cfff200,nonzero rule] (302.7969,534.6836) -- (299.9319,525.7386) --
+    (297.0706,534.6936) -- (287.7056,534.6836) -- (295.2969,540.1424) --
+    (292.4556,548.9711) -- (299.9369,543.5124) -- (307.4119,548.9711) --
+    (304.5656,540.1424) -- (312.1631,534.6836) -- (302.7969,534.6836);
+
+  % path3034
+  \path[fill=cfff200,nonzero rule] (341.4594,524.4011) -- (338.5981,515.4649) --
+    (335.7269,524.4111) -- (326.3719,524.4011) -- (333.9594,529.8599) --
+    (331.1181,538.6874) -- (338.5981,533.2286) -- (346.0781,538.6874) --
+    (343.2269,529.8599) -- (350.8256,524.4011) -- (341.4594,524.4011);
+
+  % path3036
+  \path[fill=cfff200,nonzero rule] (369.8481,496.0224) -- (366.9769,487.0761) --
+    (364.1069,496.0311) -- (354.7506,496.0221) -- (362.3481,501.4809) --
+    (359.4969,510.3084) -- (366.9769,504.8396) -- (374.4569,510.3084) --
+    (371.6069,501.4809) -- (379.2031,496.0221) -- (369.8481,496.0221);
+
+  % path3038
+  \path[fill=cfff200,nonzero rule] (389.4869,457.1349) -- (380.1219,457.1349) --
+    (377.2506,448.1899) -- (374.3894,457.1449) -- (365.0244,457.1349) --
+    (372.6219,462.5936) -- (369.7806,471.4224) -- (377.2506,465.9536) --
+    (384.7319,471.4224) -- (381.8894,462.5936) -- (389.4869,457.1349);
+
+  % path3040
+  \path[fill=cfff200,nonzero rule] (359.4969,432.7499) -- (366.9769,427.2911) --
+    (374.4569,432.7499) -- (371.6069,423.9224) -- (379.2031,418.4736) --
+    (369.8481,418.4736) -- (366.9769,409.5274) -- (364.1069,418.4824) --
+    (354.7506,418.4734) -- (362.3481,423.9221) -- (359.4969,432.7496);
+
+  % path3042
+  \path[fill=cfff200,nonzero rule] (338.7056,381.2561) -- (335.8444,390.2111) --
+    (326.4794,390.1923) -- (334.0669,395.6611) -- (331.2256,404.4886) --
+    (338.7156,399.0198) -- (346.1869,404.4886) -- (343.3444,395.6611) --
+    (350.9419,390.1923) -- (341.5669,390.1923) -- (338.7056,381.2561);
+
+\end{scope}
+
 \end{tikzpicture}
 }
 
